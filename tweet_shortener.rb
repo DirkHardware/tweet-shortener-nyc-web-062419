@@ -13,6 +13,7 @@ def word_substituter(tweet)
       else i += 1
       end
     end
+  end
 end
 
 def bulk_tweet_shortener
