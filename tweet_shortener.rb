@@ -9,6 +9,7 @@ def word_substituter(tweet)
     while i < dict_ar.length
       if string == dic_ar[i]
         string = dic_ar[i]
+        puts string
       else i += 1
       end
     end
