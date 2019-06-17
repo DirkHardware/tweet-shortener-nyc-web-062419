@@ -5,7 +5,7 @@ end
 def word_substituter(tweet)
   sentence = tweet.split(" ")
   dic_ar = dictionary.keys
-  tweet.map do |string|
+  sentence.map do |string|
     i = 0
     while i < dict_ar.length
       if string == dic_ar[i]
