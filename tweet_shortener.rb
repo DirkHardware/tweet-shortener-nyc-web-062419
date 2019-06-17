@@ -1,5 +1,5 @@
 def word_substituter
-end 
+end
 
-def bulk_tweet_shortener 
+def bulk_tweet_shortener
 end 
