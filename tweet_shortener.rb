@@ -33,5 +33,3 @@ end
 
 def bulk_tweet_shortener
 end
-
-tweet.map do |string|
