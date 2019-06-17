@@ -5,17 +5,30 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  sentence = tweet.split(" ")
-  dic_ar = dictionary.keys
-  sentence.maps do |string|
-    i = 0
-    while i < dic_ar.length
-      if string == dic_ar[i]
-        string = dictionary[dic_ar[i]]
-      i += 1
-      end
+  words = tweet.split(" ")
+  short_tweet = []
+
+  words.each do |word|
+    case word.downcase
+    when "hello"
+      short_tweet << "hi"
+    when "to", "two", "too"
+      short_tweet << "2"
+    when "for", "four" 
+      short_tweet << "4"
+    when "be" 
+      short_tweet << "b"
+    when "you" 
+      short_tweet << "u"
+    when "at" 
+      short_tweet << "@" 
+    when "and" 
+      short_tweet << "&"
+    else
+      short_tweet << word
     end
   end
+  short_tweet.join(" ")
 end
 
 def bulk_tweet_shortener
